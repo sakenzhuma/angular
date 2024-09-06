@@ -1,0 +1,14 @@
+<form [formGroup]="ob">
+    <h2 class="tc mv2">Sign In</h2>
+    <inbox>
+    <label for="email">Email</label>
+    <input type="email" name="email" formControlName="email" />
+    </inbox>
+    <inbox>
+    <label for="password">Password</label>
+    <input type="password" name="password" formControlName="password" />
+    </inbox>
+    <button (click)="onSubmit()">Sign In</button>
+    <span-links title="Don't you have an account?" text="Sign In" 
+        (click)="setIdx(12)" />
+</form>
